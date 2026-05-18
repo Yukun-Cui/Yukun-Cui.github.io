@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/masonry/"/>
+    <link rel="canonical" href="http://example.com/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -87,14 +87,12 @@
         
         <meta name="description" content="KK&#39;s Blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="瀑布流相册">
-<meta property="og:url" content="http://example.com/masonry/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="KK&#39;s Blog">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/wallhaven-72rd8e_2560x1440-1.webp">
-<meta property="article:published_time" content="2023-05-20T03:00:00.000Z">
-<meta property="article:modified_time" content="2023-05-20T02:16:06.686Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/img/wallhaven-72rd8e_2560x1440-1.webp">
@@ -109,7 +107,7 @@
     
     <title>
         
-            瀑布流相册 | KK&#39;s Blog
+            KK&#39;s Blog - Welcome !
         
     </title>
 
@@ -338,11 +336,154 @@
 <main class="page-container" id="swup">
 
 	
+	
+    <style>
+        .home-banner-container {
+            background: none !important;
+        }
+        .home-article-item,
+        .sidebar-links,
+        .sidebar-content,
+        a.page-number,
+        a.extend,
+        .sidebar-links .links:hover,
+        .right-bottom-tools,
+        footer.footer {
+            background-color: var(--background-color-transparent-80) !important;
+        }
+        .right-bottom-tools:hover,
+        a.page-number:hover,
+        a.extend:hover {
+            background-color: var(--primary-color) !important;
+        }
+        .site-info,
+        .home-article-sticky-label {
+            background-color: var(--background-color-transparent-15) !important;
+        }
+        .home-article-sticky-label {
+            backdrop-filter: none !important;
+        }
+    </style>
+    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
+        <img src="/img/wallhaven-72rd8e_2560x1440-1.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
+        <img src="/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
+    </div>
+
+
+<div class="home-banner-container flex justify-center items-center transition-fade relative">
+    
+    <div class="content mt-8 flex flex-col justify-center items-center transition-fade-down">
+        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
+        
+        >
+            KK's Blog
+            
+            
+            
+            
+            
+                <p><i id="subtitle"></i></p>
+            
+        </div>
+        
+            
+            <div class="absolute bottom-0.5 flex flex-row justify-center max-w-[1340px] items-center w-full px-8 sm:px-12">
+                <div class="hidden p-3 bg-gray-300/50 dark:bg-gray-500/40 backdrop-blur-lg border border-white/20 dark:border-gray-500/30 group rounded-full cursor-pointer flex justify-center items-center aspect-square h-full shadow-redefine-flat hover:shadow-redefine-flat-hover transition-shadow" onclick="scrollToMain()" >
+                    <i class="fa-solid fa-arrow-down fa-fw fa-lg group-hover:translate-y-1 transition-transform"></i>
+                </div>
+                <div class="social-contacts px-6 py-3 bg-gray-300/50 dark:bg-gray-500/40 backdrop-blur-lg border border-white/20 dark:border-gray-500/30 shadow-redefine-flat rounded-full flex flex-row gap-3 items-center">
+                    
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                                <span class="social-contact-item">
+                                    <a target="_blank" href="https://github.com/Yukun-Cui/">
+                                        <i class="fa-brands fa-github fa-fw fa-lg"></i>
+                                    </a>
+                                </span>
+                            
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                                <span class="social-contact-item">
+                                    <a target="_blank" href="https://www.zhihu.com/people/bei-ming-you-yu-91-35-70">
+                                        <i class="fa-brands fa-zhihu fa-fw fa-lg"></i>
+                                    </a>
+                                </span>
+                            
+                        
+                    
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                                
+                                <span class="social-contact-item ">
+                                    <a href="mailto:you@example.com">
+                                        <i class="fa-solid fa-at fa-fw fa-lg"></i>
+                                    </a>
+                                </span>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                    
+                </div>
+            </div>
+        
+    </div>
+    <style>
+        /* Mobile-specific QR code styles */
+        .qr-toggle-item.qr-active .qr-popup {
+            visibility: visible !important;
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        
+        /* Prevent button from staying in focus/hover state on mobile */
+        @media (hover: none) and (pointer: coarse) {
+            .qr-toggle-item:focus,
+            .qr-toggle-item:hover {
+                background-color: transparent;
+            }
+            
+            .qr-toggle-item .qr-trigger:focus,
+            .qr-toggle-item .qr-trigger:hover {
+                background-color: transparent;
+                color: inherit;
+            }
+            
+            /* Only show active state when explicitly toggled */
+            .qr-popup {
+                visibility: hidden !important;
+                opacity: 0 !important;
+            }
+        }
+    </style>
+</div>
+
+	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
 			<header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar ">
+    <div class="navbar-content transition-navbar has-home-banner">
         <div class="left">
             
                 <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
@@ -350,9 +491,9 @@
                 </a>
             
             <a class="logo-title" href="/">
-                
+                <h1>
                 KK&#39;s Blog
-                
+                </h1>
             </a>
         </div>
 
@@ -366,7 +507,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class=""
+                                <a class="active"
                                    href="/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -490,7 +631,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                            href="/"
                         >
                             <span>
@@ -530,7 +671,7 @@
 
                     <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
                         
-                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                              navbar-data-toggle="submenu-About"
                         >
                             <span>
@@ -564,7 +705,7 @@
 
                     <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
                         
-                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                              navbar-data-toggle="submenu-Links"
                         >
                             <span>
@@ -648,26 +789,138 @@
 			
 
 			<div class="main-content">
-				
+				<div class="home-content-container">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
 
+                
 
-<div class="py-8 sm:py-0">
-	<h1 class="page-title-header">
-		瀑布流相册
-	</h1>
+                
 
-	<div class="min-h-screen!" id="masonry-container" data-masonry-data-url="/masonry/data.json"></div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/archives/1/">
+                            docker: Error response from daemon: unknown or invalid runtime name: nvidia 解决方案
+                        </a>
+                    </h3>
 
-	<div class="masonry-loadmore is-hidden" id="masonry-loadmore" aria-live="polite">
-		<span class="masonry-spinner" aria-hidden="true"></span>
-		<span class="masonry-loadmore-text">Loading photos...</span>
-	</div>
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            我们使用Docker的过程中往往需要使用GPU，于是需要安装NVIDIA Driver、NVIDIA Container Toolkit和CUDA Toolkit等工具。
+如果你使用的是Ubuntu等Linux原生系统 + docker：你需要在 /etc/docker/daemon.json 中设置default-runtime为nvidia，然后重启docker，确保你启动了NVIDIA...
+                        
+                    </div>
 
-	<div id="masonry-sentinel" aria-hidden="true"></div>
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat May 16 2026 22:00:00 GMT+0800">
+                
+                    2026-05-16
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/archives/1/">Read more<span class="seo-reader-text">docker: Error response from daemon: unknown or invalid runtime name: nvidia 解决方案</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
+                </div>
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator px-7 py-5">
+        <div class="paginator">
+	<span class="page-number current">1</span>
+</div>
+  
+    </div>
+</div>
 
 			</div>
+
+			
+			<div class="home-sidebar-container">
+    <div class="sticky-container sticky">
+        
+        
+            
+                <div class="sidebar-links">
+                    <div class="site-info">
+                        <div class="site-name">KK&#39;s Blog</div>
+                        
+                            <div class="announcement">
+                                Welcome to KK's Blog!
+                            </div>
+                        
+                    </div>
+                    
+                        
+                            
+                                <a class="links" href="/archives">
+                                    
+                                        <i class="fa-regular fa-archive icon-space"></i>
+                                    
+                                    <span class="link-name">Archives</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/tags">
+                                    
+                                        <i class="fa-regular fa-tags icon-space"></i>
+                                    
+                                    <span class="link-name">Tags</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/categories">
+                                    
+                                        <i class="fa-regular fa-folder icon-space"></i>
+                                    
+                                    <span class="link-name">Categories</span>
+                                </a>
+                            
+                        
+                    
+                </div>
+            
+            <div class="sidebar-content"  marginTop >
+                <div class="avatar flex justify-center">
+    <img src="/img/avatar.ico">
+</div>
+                <div class="author flex flex-col justify-center my-2.5 mx-0">
+    <div class="name">KK</div>
+    
+        <div class="label">MVP</div>
+    
+</div>
+                <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+            </div>
+        
+
+    </div>
+</div>
 
 			
 		</div>
@@ -893,6 +1146,7 @@
         }),
     );
 </script>
+
 
 
 
