@@ -10,7 +10,7 @@
 <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://i-blog.csdnimg.cn/blog_migrate/87efb0150bedd7ae156df00e7f571d4b.png"
+                     data-src="/img/87efb0150bedd7ae156df00e7f571d4b.png"
                       alt="请添加图片描述"
                 ><br>
 By the way ~ <code>WSL 2</code>也需要在<code>Resources</code>中设置确保开启。</p>
